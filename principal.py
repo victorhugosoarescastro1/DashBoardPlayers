@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import webbrowser as wb
-import datetime as dttm
+from datetime import datetime as dttm
 
 if "data" not in st.session_state:
     df_data = pd.read_csv("datasets/CLEAN_FIFA23_official_data.csv", index_col = 0)
