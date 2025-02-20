@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(
     layout ='wide',
     page_title ='Times',
-    page_icon = '🥇'
+    page_icon = '🎯'
 )
 
 df_data = st.session_state["data"]
