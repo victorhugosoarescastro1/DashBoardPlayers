@@ -21,7 +21,7 @@ columns = ["Age", "Photo", "Flag", "Overall", 'Value(£)', 'Wage(£)', 'Height(c
 
 st.dataframe(df_filtro[columns],
              column_config={
-                 "Overall": st.column_config.ProgressColumn("Overall", format='%d', min_value=0, max_value=100)
+                 "Overall": st.column_config.ProgressColumn("Overall", format='%d', min_value=0, max_value=100),
                  "Value(£)": st.column_config.NumberColumn(),
                  "Wage(£)": st.column_config.ProgressColumn("Weekly Wage", format="£%f", min_value=0, max_value=df_filtro["Wage(£)"].max()),
                  "Photo": st.column_config.ImageColumn(),
