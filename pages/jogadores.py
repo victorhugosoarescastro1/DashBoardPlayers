@@ -17,7 +17,7 @@ st.title(f"{estatistica_jogador['Name']}")
 st.markdown = (f"**Clube:** {estatistica_jogador['Club']}")
 st.markdown = (f"**Posição:** {estatistica_jogador['Position']}")
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3 = st.columns(3)
 
 col1.markdown = (f"**Idade:** {estatistica_jogador['Age']}")
 col2.markdown = (f"**Altura:** {estatistica_jogador['Height(cm.)'] /100}")
@@ -28,4 +28,7 @@ st.divider()
 st.subheader= (f"Overall{estatistica_jogador['Overall']}")
 st.progress(int(estatistica_jogador['Overall']))
 
+col1, col2, col3, col4 = st.columns(4)
+
+col1.metric(label="Valor do Mercado")
 
