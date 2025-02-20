@@ -13,3 +13,19 @@ estatistica_jogador = df_data[df_data["Name"] == jogador].iloc[0]
 
 st.image(estatistica_jogador["Photo"])
 st.title(f"{estatistica_jogador['Name']}")
+
+st.markdown = (f"**Clube:** {estatistica_jogador['Club']}")
+st.markdown = (f"**Posição:** {estatistica_jogador['Position']}")
+
+col1, col2, col3, col4 = st.columns(4)
+
+col1.markdown = (f"**Idade:** {estatistica_jogador['Age']}")
+col2.markdown = (f"**Altura:** {estatistica_jogador['Height(cm.)'] /100}")
+col3.markdown = (f"**Peso:** {estatistica_jogador['Weight(lbs.)'] / 0.453:.2f}")
+
+st.divider()
+
+st.subheader= (f"Overall{estatistica_jogador['Overall']}")
+st.progress(int(estatistica_jogador['Overall']))
+
+
